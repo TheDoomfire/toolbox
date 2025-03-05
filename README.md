@@ -2,6 +2,32 @@
 Template for python projects. Not completed
 
 
+## TODO
+
+Unzip files, add to strings.
+
+**ReadData**
+To read the data from a: 
+- File
+- URL
+
+**Cleaner**
+To remove data from:
+- Strings
+- Lists
+- Objects
+
+**Exporter**
+To create any files
+
+**Sorter**
+To sort data.
+- Example: ake a list with objects and sort them by date.
+- Take a list of objects and sort them by date.
+
+
+
+
 ## Installations
 Installing the project. Everything you need here.
 
