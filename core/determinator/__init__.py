@@ -1,0 +1,1 @@
+__all__ = ["determinator", "file_determinator"] # The filenames inside the directory

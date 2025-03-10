@@ -1,6 +1,7 @@
 from dataclasses import dataclass, field
 
 # Local Imports
+from utils.config.files.files import ProjectFiles
 from utils.config.paths.paths import ProjectPaths
 
 
@@ -15,6 +16,10 @@ EXAMPLE:
     welcome = CONFIG.WELCOME_MESSAGE
     root_path = CONFIG.PATHS.PROJECT_ROOT
 
+TODO:
+    Perhaps save every name in a list/object.
+    Then for each name, have regex patterns, validations, schema, filetype, etc.
+
 """
 
 
@@ -24,6 +29,10 @@ EXAMPLE:
 class ProjectConfig:
     """Main configuration hub for the entire project"""
     PATHS: ProjectPaths = field(default_factory=ProjectPaths)
+
+    FILES: ProjectFiles = field(default_factory=ProjectFiles)
+
+    # Add: Files etc here?
 
     WELCOME_MESSAGE: str = "Hello World!"
 
